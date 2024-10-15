@@ -29,3 +29,7 @@ GuilhermeFibrantz_Projeto.pdf
 ## 2024-03-26 - 21:08
 
 [_Correlatos](_Correlatos)  
+
+## 2024-10-15 - 10:01
+
+Revisao pré-projeto: [2024-09-14_PreProjeto.docx](2024-09-14_PreProjeto.docx)  
