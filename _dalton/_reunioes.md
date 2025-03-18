@@ -107,5 +107,5 @@ i) permitir ao usuário interagir com o mundo virtual através dos atuadores pre
 Pedi para fazer um projeto "raiz" usando o tutorial da Meta:  
 <https://developers.meta.com/horizon/develop/unity/>  
 
-E usar tudo do TCC do Gulherme:  
+E usar tudo do TCC do Guilherme:  
 <https://github.com/gcgfurb/tcc_GuilhermeFibrantz>  
