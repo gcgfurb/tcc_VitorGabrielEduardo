@@ -101,3 +101,11 @@ i) permitir ao usuário interagir com o mundo virtual através dos atuadores pre
 - olhar TCC Guilherme  
 - projeto na versão funcional: oficial  
 - ver o material Clarissa  
+
+## 2025-03-18 - 16:47
+
+Pedi para fazer um projeto "raiz" usando o tutorial da Meta:  
+<https://developers.meta.com/horizon/develop/unity/>  
+
+E usar tudo do TCC do Gulherme:  
+<https://github.com/gcgfurb/tcc_GuilhermeFibrantz>  
