@@ -109,3 +109,9 @@ Pedi para fazer um projeto "raiz" usando o tutorial da Meta:
 
 E usar tudo do TCC do Guilherme:  
 <https://github.com/gcgfurb/tcc_GuilhermeFibrantz>  
+
+## 2025-03-25 - 16:04
+
+Na semana anterior fez pouca coisa. Testou o TCC do Fibrantz.  
+Pedi para fazer um projeto "raiz" usando o tutorial da Meta:  
+<https://developers.meta.com/horizon/develop/unity/>  
