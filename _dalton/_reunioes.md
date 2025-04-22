@@ -115,3 +115,25 @@ E usar tudo do TCC do Guilherme:
 Na semana anterior fez pouca coisa. Testou o TCC do Fibrantz.  
 Pedi para fazer um projeto "raiz" usando o tutorial da Meta:  
 <https://developers.meta.com/horizon/develop/unity/>  
+
+## 2025-04-15 - 16:09
+
+Tem um projeto inicial com os controles e gestos da mãos.  
+
+A) usar o projeto: objetivo e RFs
+  
+B) E usar tudo do TCC do Guilherme: <https://github.com/gcgfurb/tcc_GuilhermeFibrantz>  
+    3 cenas: faixa pedestre, patinete e acidente carro  
+    trazer Quest  
+    - adaptar a interação (20%)  
+    - "batimento" com projeto
+
+## 2025-04-22 - 16:16
+
+- acionar um botão virtual (ligar o carro)  
+
+- pesquisar modo Quest estacionário (não ser guardia e outros)  
+- "ligar" volante, pedal e marcha com o Unity (sem uso do Quest) no PC  
+  - depois ser Quest  
+- registrar do objeto virtual no real: volante  
+- gesto com as mãos: colocar o cinto (pegar item da mochila)  
