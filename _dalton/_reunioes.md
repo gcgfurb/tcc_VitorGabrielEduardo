@@ -130,6 +130,8 @@ B) E usar tudo do TCC do Guilherme: <https://github.com/gcgfurb/tcc_GuilhermeFib
 
 ## 2025-04-22 - 16:16
 
+Tutorial do Quest para Unity: <https://developers.meta.com/horizon/documentation/unity/unity-tutorial-hello-vr/>  
+
 - acionar um botão virtual (ligar o carro)  
 
 - pesquisar modo Quest estacionário (não ser guardião e outros)  
