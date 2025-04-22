@@ -132,7 +132,7 @@ B) E usar tudo do TCC do Guilherme: <https://github.com/gcgfurb/tcc_GuilhermeFib
 
 - acionar um botão virtual (ligar o carro)  
 
-- pesquisar modo Quest estacionário (não ser guardia e outros)  
+- pesquisar modo Quest estacionário (não ser guardião e outros)  
 - "ligar" volante, pedal e marcha com o Unity (sem uso do Quest) no PC  
   - depois ser Quest  
 - registrar do objeto virtual no real: volante  
