@@ -115,3 +115,105 @@ E usar tudo do TCC do Guilherme:
 Na semana anterior fez pouca coisa. Testou o TCC do Fibrantz.  
 Pedi para fazer um projeto "raiz" usando o tutorial da Meta:  
 <https://developers.meta.com/horizon/develop/unity/>  
+
+## 2025-04-15 - 16:09
+
+Tem um projeto inicial com os controles e gestos da mãos.  
+
+A) usar o projeto: objetivo e RFs
+  
+B) E usar tudo do TCC do Guilherme: <https://github.com/gcgfurb/tcc_GuilhermeFibrantz>  
+    3 cenas: faixa pedestre, patinete e acidente carro  
+    trazer Quest  
+    - adaptar a interação (20%)  
+    - "batimento" com projeto
+
+## 2025-04-22 - 16:16
+
+Tutorial do Quest para Unity: <https://developers.meta.com/horizon/documentation/unity/unity-tutorial-hello-vr/>  
+
+- acionar um botão virtual (ligar o carro)  
+
+- pesquisar modo Quest estacionário (não ser guardião e outros)  
+- "ligar" volante, pedal e marcha com o Unity (sem uso do Quest) no PC  
+  - depois ser Quest  
+- registrar do objeto virtual no real: volante  
+- gesto com as mãos: colocar o cinto (pegar item da mochila)  
+
+## 2025-05-06 - 11:21
+
+O que eu fiz essa semana  
+Fiz o volante virtual seguir certinho o movimento do volante real baseado nos inputs reais do volante g29.  
+Fiz um sistema de aceleração, rotação do motor e velocidade final de maneira inicial, onde eu coleto dados dos pedais reais g29 de aceleração e freio normalizo os dados (0-1) e mexo nas variáveis de velocidade virtuais.  
+Já peguei e corrigi alguns bugs.  
+[Dalton] O que seria isso? --> Um sinto que é possível pegar e encaixar no encaixe.  
+Já quando o sinto encosta no encaixe já larga o objeto automaticamente e fixa ele em um ponto que fica bonito.  
+"Modelei" uma ponto de sinto e encaixe bonitos pra já deixar na versão final.  
+Fiz uma base do sinto e uma corda do sinto para envolver a pessoa mesmo. (Finalizando toques finais + 90 minutos)  
+
+A fazer  
+Fazer menu para trocar de cena: INICIAR, ENCERRAR, INFO  
+Fazer barra de notificação, um popup configurável para apresentar as mensagens do sistema.  
+Programar um motor de carro mais completo seguindo esse tutorial: <https://youtube.com/playlist?list=PLhWBaV_gmpGXxscZr8PIcreyYkw8VlnKn&si=WGuBy1NAEGGxXfYi>  
+Colocar a marcha da Logitech real e coletar os dados pelo Unity.  
+Importar carro e biblioteca low poly para o projeto e colocar o usuário nesse mundo.  
+
+## 2025-05-13 - 16:08
+
+...
+
+## 2025-05-20 - 16:09
+
+Quest Meta
+g29
+Visual/Carro
+
+- chave: problema para "girar" ... com os ângulos.  
+  Leo  
+- motor
+
+## 2025-05-27 - 16:06
+
+Feito (13/05 - 20/05):
+
+- Feito um modelo de carro simples para testar  
+- Feito um modelo de aceleração baseado na rotação das rodas para retornar o torque  
+- Feito um sistema de marchas Ré, Neutra, 1-6 Marcha(Agora está na 1 marcha fixada)  
+- Feito uma animação para os pneus mexerem (carro se movendo pra frente e pra trás) e mexerem para os lados  
+- Feito um sistema de compensação para a roda de um lado girar mais que a roda do outro lado, para fechar uma circunferência a roda de dentro do raio gira mais que o externo do raio  
+- Implementando downforce, uma força vertical no veiculo que muda dependendo da velocidade, para ajudar nas curvas;
+- Colocado um centro de massa para a força  
+- Reimplmentado todo o código para melhorar a legibilidade do código  
+- Implementando freio (Não finalizado)  
+
+Feito (20/05 - 27/05):  
+
+- Finalizado a implementação de freio no carro;  
+- Redimencionado os componentes do carro para os valores ficarem mais próximos da realidade;  
+- Programado rotação de motor;  
+- Agora o torque é entregue baseado na rotação de motor ao invés das rodas;  
+- Coloquei diversas regras baseadas no pedal de embregem;  
+- Quanto mais ele é apertado, menos é considerado a rotação da roda para o calculo de rotação do motor e mais é considerado a rotação em repouso mais um valor * o pedal de aceleração;  
+- Foi colocado um valor minimo do pedal de aceleração para 0.1 (10%) assim o carro em repouso apenas por deixar a primeira marcha já chega a 5 km/h  
+- Foi criado um valor de rotação do carro em repouso como meta e várias coisas.  
+- Foi criado uma validação de se a rotação atual for de 40% a rotação em repouso o carro morre, salvo se o pedal da embreagem estiver com 70% pressionado.  
+- Colocado um retorno de calculo de eficiencia do motor, onde é pega a rotação do motor atual e pego a partir de um gráfico o valor de eficiencia maximo do motor.  
+- Colocado um limitador para quanto de input de aceleração é dado, sendo esse limite a eficiencia do motor, assim quando o motor está em rotação baixa, não adianta afundar o pé no acelerador, apenas irá mandar a eficiencia. (Simulando o papelda   injeção eletrônica).  
+- Aumentado o atrito das rodas com o chão para aumentar a simulação;  
+- Tentei implementar um velocimetro mas não obtive sucesso, o canvas image não quer aceitra o png da imagem, tentei muda-lo para sprite mas não resolveu; (45 minutos)  
+
+A fazer: (6 horas)
+
+- Colocar uma validação para quando ocorre muita distorção da rotação alvo para a rotação atual para matar o carro; (10 minutos)  
+- Colocar um sistema de freio baseado no fato do motor estar conectado com a roda (10 minutos)  
+- Aplicar uma força de freio na roda de até 15% do poder de freio, esse valor deve ser oriundo do pedal de embreagem invertido (quando mais pressionado menor o output) algo como frear(pedalEmbregaemInv * 0.15f * pesoPararGiraMotor) + forcaDeFreio;  
+- Ler a troca de marcha e troca-la baseada na marcha fisica; (45 minutos)  
+- Prender a mão virtual no volante virtual; (1 hora???)  
+- Finalizar a ligação da chave; (1 hora???)  
+- Importar assets da cidade; (15 minutos)  
+- Importar asset do carro mesclar o visual com a parte lógica que fiz do carro; (45 minutos)  
+- Mesclar projetos; (30 minutos)  
+- Adicionar alerta e variaveis para quando o carro morre; (40 minutos)  
+- Tem que ligar o carro pela chave novamente e emitir uma notificação.  
+- Arrumar textos do menu do jogo?  
+- Definir os textos que serão colocados ali.  
