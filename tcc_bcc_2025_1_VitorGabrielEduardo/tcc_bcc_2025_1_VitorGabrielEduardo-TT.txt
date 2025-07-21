@@ -1,0 +1,9 @@
+Instalar o Meta Quest Link
+Instalar o Logitech G Hub
+Abrir o projeto no Unity 6000.0.29f1
+Compilar o projeto para computador
+Abrir o Meta Quest Link 
+Conectar o seu Quest 2
+Conectar os periféricos G 29 (Volante, Marcha e Pedais)
+Abrir o Logitech G Hub
+Executar o build gerado
